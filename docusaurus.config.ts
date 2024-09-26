@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://mercurius.dev",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -61,8 +61,6 @@ const config: Config = {
     ]
   ],
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     navbar: {
       logo: {
         alt: "Mercurius Logo",
