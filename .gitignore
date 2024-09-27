@@ -107,6 +107,12 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 /build
+/scripts/releases/*
+/scripts/downloads/*
+versioned_docs/*
+!versioned_docs/.keep
+versioned_sidebars/*
+!versioned_sidebars/.keep
 
 # Serverless directories
 .serverless/

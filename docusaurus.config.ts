@@ -35,12 +35,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: (editPage) => {
-            // Users can not submit doc updates to the legacy versions!
-
-            // We want users to submit doc updates to the upstream/next version!
             return `https://github.com/mercurius-js/mercurius/edit/main/docs/${editPage.docPath}`;
           }
         },
