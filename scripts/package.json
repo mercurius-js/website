@@ -1,0 +1,26 @@
+{
+  "name": "mercurius-js/website-scripts",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Internal scripts for the Mercurius website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "directory-tree": "^3.4.0",
+    "glob": "^8.0.3",
+    "pino": "^8.8.0",
+    "pino-pretty": "^9.1.1",
+    "prepend-file": "^2.0.1",
+    "replace": "^1.2.2",
+    "semver": "^7.3.8",
+    "undici": "^5.14.0",
+    "yaml": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}

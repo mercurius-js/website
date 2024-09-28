@@ -66,7 +66,7 @@ const config: Config = {
         { to: "/", label: "Home", position: "left" },
         {
           type: "docSidebar",
-          sidebarId: "customSidebar",
+          sidebarId: "docsSidebar",
           label: "Docs",
           position: "left"
         },
@@ -74,6 +74,10 @@ const config: Config = {
           to: "/contribute",
           label: "Contribute",
           position: "left"
+        },
+        {
+          type: "docsVersionDropdown",
+          position: "right"
         },
         {
           href: "https://github.com/mercurius-js/mercurius",
