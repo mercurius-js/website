@@ -542,7 +542,7 @@ throw error
 
 Allows the status code of the response to be set, and a GraphQL response for the error to be defined. You find out how to do this [here](../http.md#custom-behaviour).
 
-By default uses the `defaultErrorFormatter`, but it can be overridden in the [mercurius options](/docs/api/options.md#plugin-options) changing the errorFormatter parameter.
+By default uses the `defaultErrorFormatter`, but it can be overridden in the [mercurius options](/docs/api/options#plugin-options) changing the errorFormatter parameter.
 
 **Important**: _using the default formatter, when the error has a data property the response status code will be always 200_
 
