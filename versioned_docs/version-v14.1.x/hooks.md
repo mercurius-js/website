@@ -18,12 +18,11 @@ By using hooks you can interact directly with the GraphQL lifecycle of Mercurius
   - [onSubscriptionEnd](#onsubscriptionend)
   - [Manage Errors from a subscription hook](#manage-errors-from-a-subscription-hook)
 
-
 **Notice:** these hooks are only supported with `async`/`await` or returning a `Promise`.
 
 ## GraphQL Request Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/lifecycle.md).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/lifecycle).<br />
 
 There are five different hooks that you can use in a GraphQL Request *(in order of execution)*:
 
@@ -58,10 +57,11 @@ fastify.graphql.addHook('preValidation', async (schema, document, context) => {
 ### preExecution
 
 In the `preExecution` hook, you can modify the following items by returning them in the hook definition:
-  - `document`
-  - `schema`
-  - `variables`
-  - `errors`
+
+- `document`
+- `schema`
+- `variables`
+- `errors`
 
 Note that if you modify the `schema` or the `document` object, the [jit](./api/options.md#plugin-options) compilation will be disabled for the request.
 
@@ -94,6 +94,7 @@ fastify.graphql.addHook('onResolution', async (execution, context) => {
 ```
 
 ### Manage Errors from a request hook
+
 If you get an error during the execution of your hook, you can just throw an error and Mercurius will automatically close the GraphQL request and send the appropriate errors to the user.`
 
 ```js
@@ -106,7 +107,7 @@ fastify.graphql.addHook('preParsing', async (schema, source, context) => {
 
 The following hooks support adding errors to the GraphQL response. These are:
 
- - `preExecution`
+- `preExecution`
 
 ```js
 fastify.graphql.addHook('preExecution', async (schema, document, context) => {
@@ -136,7 +137,7 @@ Note, the original query will still execute. Adding the above will result in the
 
 ## GraphQL Subscription Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/lifecycle.md).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/lifecycle).<br />
 
 There are five different hooks that you can use in GraphQL Subscriptions *(in order of execution)*:
 

@@ -80,7 +80,7 @@ app.listen({ port: 3000 })
 
 ### Federation with \_\_resolveReference caching
 
-Just like standard resolvers, the `__resolveReference` resolver can be a performance bottleneck. To avoid this, the it is strongly recommended to define the `__resolveReference` function for an entity as a [loader](/docs/loaders.md).
+Just like standard resolvers, the `__resolveReference` resolver can be a performance bottleneck. To avoid this, the it is strongly recommended to define the `__resolveReference` function for an entity as a [loader](/docs/loaders).
 
 ```js
 'use strict'

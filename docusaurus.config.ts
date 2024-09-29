@@ -117,7 +117,7 @@ const config: Config = {
           ]
         }
       ],
-      copyright: `Mercurius, Copyright © ${new Date().getFullYear()}, Licensed under MIT`
+      copyright: `Mercurius, Copyright © 2018-${new Date().getFullYear()}, Licensed under <a href="https://github.com/mercurius-js/mercurius/blob/main/LICENSE">MIT</a>`
     },
     prism: {
       theme: prismThemes.github,
