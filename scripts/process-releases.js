@@ -124,11 +124,8 @@ async function processReleases(opts) {
   await fixBrokenLinks(versionedFolder);
 
   // We can't run this fix on version >=3 because it would make the code blocks ugly
-  const v1Docs = orderedVersions.find((v) => v.startsWith("v1."));
-  await fixCodeBlocks(join(versionedFolder, `version-${v1Docs}`));
-
-  const v2Docs = orderedVersions.find((v) => v.startsWith("v2."));
-  await fixCodeBlocks(join(versionedFolder, `version-${v2Docs}`));
+  // const v1Docs = orderedVersions.find((v) => v.startsWith("v1."));
+  // await fixCodeBlocks(join(versionedFolder, `version-${v1Docs}`));
 
   log.info("Done");
 }
@@ -208,31 +205,31 @@ ${Object.entries(metadataJson)
   );
 }
 
-async function fixCodeBlocks(dir) {
-  const silent = true;
+// async function fixCodeBlocks(dir) {
+//   const silent = true;
 
-  if (!fsOld.existsSync(dir)) {
-    return;
-  }
+//   if (!fsOld.existsSync(dir)) {
+//     return;
+//   }
 
-  // Add a new line before and after code blocks
-  replace({
-    regex: /(?<!^\W)(```)/gm,
-    replacement: `\n$1`,
-    paths: [dir],
-    recursive: true,
-    silent
-  });
+//   // Add a new line before and after code blocks
+//   replace({
+//     regex: /(?<!^\W)(```)/gm,
+//     replacement: `\n$1`,
+//     paths: [dir],
+//     recursive: true,
+//     silent
+//   });
 
-  // Add a new line before titles #
-  replace({
-    regex: /(?<=\n)(#+)/g,
-    replacement: `\n$1`,
-    paths: [dir],
-    recursive: true,
-    silent
-  });
-}
+//   // Add a new line before titles #
+//   replace({
+//     regex: /(?<=\n)(#+)/g,
+//     replacement: `\n$1`,
+//     paths: [dir],
+//     recursive: true,
+//     silent
+//   });
+// }
 
 async function fixHtmlTags(dir) {
   const silent = true;
