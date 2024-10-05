@@ -104,6 +104,10 @@ const config: Config = {
             {
               label: "Stack Overflow",
               href: "https://stackoverflow.com/questions/tagged/mercurius"
+            },
+            {
+              label: "Discussions",
+              href: "https://github.com/mercurius-js/mercurius/discussions"
             }
           ]
         },

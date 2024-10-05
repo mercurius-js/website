@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Homepage from "@site/src/components/Homepage";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import GitHubButton from "react-github-btn";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +18,7 @@ function HomepageHeader() {
           <img
             src="https://raw.githubusercontent.com/mercurius-js/graphics/main/mercurius-horizontal.svg"
             alt="Mercurius Logo"
-            style={{ width: "100%", maxWidth: "600px", marginBottom: "20px" }}
+            style={{ width: "100%", maxWidth: "600px", marginBottom: "10px" }}
           />{" "}
         </Heading>
         <p
@@ -26,8 +27,34 @@ function HomepageHeader() {
         >
           {siteConfig.tagline}
         </p>
+        <ButtonGithub />
       </div>
     </header>
+  );
+}
+
+export function ButtonGithub() {
+  return (
+    <div style={{ marginTop: "20px" }}>
+      <GitHubButton
+        href="https://github.com/mercurius-js/mercurius"
+        data-icon="octicon-star"
+        aria-label="Star Mercurius on GitHub"
+        data-size="large"
+        data-show-count="true"
+      >
+        Star
+      </GitHubButton>
+      &nbsp; &nbsp;
+      <GitHubButton
+        href="https://github.com/mercurius-js/mercurius/fork"
+        data-icon="octicon-repo-forked"
+        aria-label="Fork Mercurius on GitHub"
+        data-size="large"
+      >
+        Fork
+      </GitHubButton>
+    </div>
   );
 }
 
