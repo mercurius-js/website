@@ -6,5 +6,5 @@ sidebar_position: 1
 
 The documentation for Mercurius is split into two categories:
 
-- [Reference documentation](/docs/reference)
-- [Guides](/docs/guides)
+- [Reference documentation](/docs/next/reference)
+- [Guides](/docs/next/guides)

@@ -4,5 +4,5 @@ sidebar_position: 2
 
 # Reference
 
-- [API](/docs/reference/api)
-- [Integrations](/docs/reference/integrations)
+- [API](/docs/next/reference/api)
+- [Integrations](/docs/next/reference/integrations)

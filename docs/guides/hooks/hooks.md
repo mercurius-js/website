@@ -26,7 +26,7 @@ By using hooks you can interact directly with the GraphQL lifecycle of Mercurius
 
 ## GraphQL Request Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/guides/lifecycle).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/next/guides/lifecycle).<br />
 
 There are five different hooks that you can use in a GraphQL Request *(in order of execution)*:
 
@@ -67,7 +67,7 @@ In the `preExecution` hook, you can modify the following items by returning them
 - `variables`
 - `errors`
 
-Note that if you modify the `schema` or the `document` object, the [jit](/docs/reference/api) compilation will be disabled for the request.
+Note that if you modify the `schema` or the `document` object, the [jit](/docs/next/reference/api) compilation will be disabled for the request.
 
 ```js
 fastify.graphql.addHook('preExecution', async (schema, document, context, variables) => {
@@ -141,7 +141,7 @@ Note, the original query will still execute. Adding the above will result in the
 
 ## GraphQL Subscription Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/guides/lifecycle).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/next/guides/lifecycle).<br />
 
 There are five different hooks that you can use in GraphQL Subscriptions *(in order of execution)*:
 

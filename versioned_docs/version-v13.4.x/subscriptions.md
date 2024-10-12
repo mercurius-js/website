@@ -7,7 +7,7 @@
   - [Build a custom GraphQL context object for subscriptions](#build-a-custom-graphql-context-object-for-subscriptions)
   - [Subscription support (with redis)](#subscription-support-with-redis)
   - [Subscriptions with custom PubSub](#subscriptions-with-custom-pubsub)
-  - [Subscriptions with @fastify/websocket](#subscriptions-with-fastify-websocket)
+  - [Subscriptions with @fastify/websocket](#subscriptions-with-fastifywebsocket)
 
 ### Subscription support (simple)
 

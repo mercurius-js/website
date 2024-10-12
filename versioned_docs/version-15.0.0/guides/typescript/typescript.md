@@ -73,7 +73,7 @@ mercuriusCodegen(app, {
 
 Then automatically while you code the types are going to be generated and give you type-safety and auto-completion.
 
-You can check the more detailed documentation [here](https://github.com/mercurius-js/mercurius-typescript/tree/master/packages/mercurius-codegen) and two complete examples using GraphQL Operations, [Loaders](/docs/guides/loaders), [Subscriptions](/docs/guides/subscriptions), and [Full integration testing](/docs/reference/integrations/mercurius-integration-testing) in [mercurius-typescript/examples/codegen](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/codegen), and an even further example that uses `.gql` files to make your GraphQL Schema in [**mercurius-typescript/examples/codegen-gql-files**](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/codegen-gql-files).
+You can check the more detailed documentation [here](https://github.com/mercurius-js/mercurius-typescript/tree/master/packages/mercurius-codegen) and two complete examples using GraphQL Operations, [Loaders](/docs/next/guides/loaders), [Subscriptions](/docs/next/guides/subscriptions), and [Full integration testing](/docs/next/reference/integrations/mercurius-integration-testing) in [mercurius-typescript/examples/codegen](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/codegen), and an even further example that uses `.gql` files to make your GraphQL Schema in [**mercurius-typescript/examples/codegen-gql-files**](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/codegen-gql-files).
 
 ## Manually typing
 
@@ -151,4 +151,4 @@ app.register(mercurius, {
 })
 ```
 
-You can check [**mercurius-typescript/examples/manual**](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/manual) for more detailed usage, using [Loaders](/docs/guides/loaders), [Subscriptions](/docs/guides/subscriptions) and [Full integration testing](/docs/reference/integrations/mercurius-integration-testing)
+You can check [**mercurius-typescript/examples/manual**](https://github.com/mercurius-js/mercurius-typescript/tree/master/examples/manual) for more detailed usage, using [Loaders](/docs/next/guides/loaders), [Subscriptions](/docs/next/guides/subscriptions) and [Full integration testing](/docs/next/reference/integrations/mercurius-integration-testing)

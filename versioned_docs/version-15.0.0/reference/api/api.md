@@ -48,7 +48,7 @@ sidebar_position: 1
 - `validationRules`: `Function` or `Function[]`. Optional additional validation rules that the queries must satisfy in addition to those defined by the GraphQL specification. When using `Function`, arguments include additional data from graphql request and the return value must be validation rules `Function[]`.
 - `subscription`: Boolean | Object. Enable subscriptions. It uses [mqemitter](https://github.com/mcollina/mqemitter) when it is true and exposes the pubsub interface to `app.graphql.pubsub`. To use a custom emitter set the value to an object containing the emitter.
   - `subscription.emitter`: Custom emitter.
-  - `subscription.pubsub`: Custom pubsub, see [Subscriptions with custom PubSub](/docs/guides/subscriptions#subscriptions-with-custom-pubsub) for more details. Note that when passing both `emitter` and `pubsub` options, `emitter` will be ignored.
+  - `subscription.pubsub`: Custom pubsub, see [Subscriptions with custom PubSub](/docs/next/guides/subscriptions#subscriptions-with-custom-pubsub) for more details. Note that when passing both `emitter` and `pubsub` options, `emitter` will be ignored.
   - `subscription.verifyClient`: `Function` A function which can be used to validate incoming connections.
   - `subscription.context`: `Function` Result of function is passed to subscription resolvers as a custom GraphQL context. The function receives the `connection` and `request` as parameters.
   - `subscription.onConnect`: `Function` A function which can be used to validate the `connection_init` payload. If defined it should return a truthy value to authorize the connection. If it returns an object the subscription context will be extended with the returned object.

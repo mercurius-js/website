@@ -26,7 +26,7 @@ By using hooks you can interact directly with the GraphQL lifecycle of Mercurius
 
 ## GraphQL Request Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/guides/lifecycle).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/next/guides/lifecycle).<br />
 
 There are five different hooks that you can use in a GraphQL Request *(in order of execution)*:
 
@@ -141,7 +141,7 @@ Note, the original query will still execute. Adding the above will result in the
 
 ## GraphQL Subscription Hooks
 
-It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/guides/lifecycle).<br />
+It is pretty easy to understand where each hook is executed by looking at the [lifecycle page](/docs/next/guides/lifecycle).<br />
 
 There are five different hooks that you can use in GraphQL Subscriptions *(in order of execution)*:
 

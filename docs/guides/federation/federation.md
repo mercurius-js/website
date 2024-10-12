@@ -71,7 +71,7 @@ app.listen({ port: 3000 })
 
 ## Federation with \_\_resolveReference caching
 
-Just like standard resolvers, the `__resolveReference` resolver can be a performance bottleneck. To avoid this, the it is strongly recommended to define the `__resolveReference` function for an entity as a [Loaders](/docs/guides/loaders).
+Just like standard resolvers, the `__resolveReference` resolver can be a performance bottleneck. To avoid this, the it is strongly recommended to define the `__resolveReference` function for an entity as a [Loaders](/docs/next/guides/loaders).
 
 ```js
 'use strict'
@@ -350,7 +350,7 @@ server.listen(3002)
 
 ### Batched Queries to services
 
-To fully leverage the DataLoader pattern we can tell the Gateway which of its services support [batched queries](/docs/guides/batched-queries).  
+To fully leverage the DataLoader pattern we can tell the Gateway which of its services support [batched queries](/docs/next/guides/batched-queries).  
 In this case the service will receive a request body with an array of queries to execute.  
 Enabling batched queries for a service that doesn't support it will generate errors.
 

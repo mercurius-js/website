@@ -63,7 +63,7 @@ In the `preExecution` hook, you can modify the following items by returning them
 - `variables`
 - `errors`
 
-Note that if you modify the `schema` or the `document` object, the [jit](docs/next/reference/api/#plugin-options) compilation will be disabled for the request.
+Note that if you modify the `schema` or the `document` object, the [jit](/docs/next/reference/api) compilation will be disabled for the request.
 
 ```js
 fastify.graphql.addHook('preExecution', async (schema, document, context, variables) => {
