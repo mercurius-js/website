@@ -540,7 +540,7 @@ throw error
 
 ### Error formatter
 
-Allows the status code of the response to be set, and a GraphQL response for the error to be defined. You find out how to do this [here](..http#custom-behaviour).
+Allows the status code of the response to be set, and a GraphQL response for the error to be defined. You find out how to do this [here](/docs/next/guides/http/#custom-behaviour).
 
 By default uses the `defaultErrorFormatter`, but it can be overridden in the [mercurius options](/docs/api/options#plugin-options) changing the errorFormatter parameter.
 
