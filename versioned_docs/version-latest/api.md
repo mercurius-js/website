@@ -1,7 +1,7 @@
 # API
 
-- [mercurius](#mercurius)
-  - [API](#api)
+- [mercurius](mercurius)
+  - [API](api)
     - [Plugin options](#plugin-options)
       - [queryDepth example](#querydepth-example)
     - [HTTP endpoints](#http-endpoints)
@@ -47,7 +47,7 @@
     - `umdUrl`: string. The urls of the plugin, it's downloaded at runtime. (eg. `https://unpkg.com/myplugin/....`)
     - `fetcherWrapper`: string. A function name exported by the plugin to read/enrich the fetch response
 
-  Check the [`example folder`](https://github.com/mercurius-js/mercurius/tree/master/examples) for detailed usage or this [document](/examples/graphiql-plugin/README.md) for a detailed explanation on how to build a plugin.
+  Check the [`example folder`](https://github.com/mercurius-js/mercurius/tree/master/examples) for detailed usage or this [document](https://github.com/mercurius-js/mercurius/blob/master/examples/graphiql-plugin/README.md) for a detailed explanation on how to build a plugin.
 
   **Note**: If `routes` is false, this option does not have effects.
 
@@ -66,7 +66,7 @@
 - `validationRules`: `Function` or `Function[]`. Optional additional validation rules that the queries must satisfy in addition to those defined by the GraphQL specification. When using `Function`, arguments include additional data from graphql request and the return value must be validation rules `Function[]`.
 - `subscription`: Boolean | Object. Enable subscriptions. It uses [mqemitter](https://github.com/mcollina/mqemitter) when it is true and exposes the pubsub interface to `app.graphql.pubsub`. To use a custom emitter set the value to an object containing the emitter.
   - `subscription.emitter`: Custom emitter.
-  - `subscription.pubsub`: Custom pubsub, see [Subscriptions with custom PubSub](/docs/subscriptions#subscriptions-with-custom-pubsub) for more details. Note that when passing both `emitter` and `pubsub` options, `emitter` will be ignored.
+  - `subscription.pubsub`: Custom pubsub, see [Subscriptions with custom PubSub](/docs/guides/subscriptions#subscriptions-with-custom-pubsub) for more details. Note that when passing both `emitter` and `pubsub` options, `emitter` will be ignored.
   - `subscription.verifyClient`: `Function` A function which can be used to validate incoming connections.
   - `subscription.context`: `Function` Result of function is passed to subscription resolvers as a custom GraphQL context. The function receives the `connection` and `request` as parameters.
   - `subscription.onConnect`: `Function` A function which can be used to validate the `connection_init` payload. If defined it should return a truthy value to authorize the connection. If it returns an object the subscription context will be extended with the returned object.
@@ -148,7 +148,7 @@ payload must conform to the following JSON schema:
 }
 ```
 
-For code from [example](/#quick-start) use:
+For code from [example](/docs/next/guides/getting-started/) use:
 
 ```bash
 curl -H "Content-Type:application/json" -XPOST -d '{"query": "query { add(x: 2, y: 2) }"}' http://localhost:3000/graphql
@@ -159,7 +159,7 @@ curl -H "Content-Type:application/json" -XPOST -d '{"query": "query { add(x: 2, 
 Executes the GraphQL query or mutation described in the body. `operationName` and `variables` can not be passed using this method. The
 payload contains the GraphQL query.
 
-For code from [example](/#quick-start) use:
+For code from [example](/docs/next/guides/getting-started/) use:
 
 ```bash
 curl -H "Content-Type:application/graphql" -XPOST -d "query { add(x: 2, y: 2) }" http://localhost:3000/graphql

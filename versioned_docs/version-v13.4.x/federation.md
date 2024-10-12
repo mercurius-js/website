@@ -1,17 +1,16 @@
 # Federation
 
-- [mercurius](#mercurius)
-  - [Federation](#federation)
-    - [Federation metadata support](#federation-metadata-support)
-    - [Federation with \_\_resolveReference caching](#federation-with-__resolvereference-caching)
-    - [Use GraphQL server as a Gateway for federated schemas](#use-graphql-server-as-a-gateway-for-federated-schemas)
-      - [Periodically refresh federated schemas in Gateway mode](#periodically-refresh-federated-schemas-in-gateway-mode)
-      - [Programmatically refresh federated schemas in Gateway mode](#programmatically-refresh-federated-schemas-in-gateway-mode)
-      - [Using Gateway mode with a schema registry](#using-gateway-mode-with-a-schema-registry)
-      - [Flag service as mandatory in Gateway mode](#flag-service-as-mandatory-in-gateway-mode)
-      - [Batched Queries to services](#batched-queries-to-services)
-      - [Using a custom errorHandler for handling downstream service errors in Gateway mode](#using-a-custom-errorhandler-for-handling-downstream-service-errors-in-gateway-mode)
-      - [Securely parse service responses in Gateway mode](#securely-parse-service-responses-in-gateway-mode)
+- [Federation](federation)
+  - [Federation metadata support](#federation-metadata-support)
+  - [Federation with \_\_resolveReference caching](#federation-with-__resolvereference-caching)
+  - [Use GraphQL server as a Gateway for federated schemas](#use-graphql-server-as-a-gateway-for-federated-schemas)
+    - [Periodically refresh federated schemas in Gateway mode](#periodically-refresh-federated-schemas-in-gateway-mode)
+    - [Programmatically refresh federated schemas in Gateway mode](#programmatically-refresh-federated-schemas-in-gateway-mode)
+    - [Using Gateway mode with a schema registry](#using-gateway-mode-with-a-schema-registry)
+    - [Flag service as mandatory in Gateway mode](#flag-service-as-mandatory-in-gateway-mode)
+    - [Batched Queries to services](#batched-queries-to-services)
+    - [Using a custom errorHandler for handling downstream service errors in Gateway mode](#using-a-custom-errorhandler-for-handling-downstream-service-errors-in-gateway-mode)
+    - [Securely parse service responses in Gateway mode](#securely-parse-service-responses-in-gateway-mode)
 
 Federation support is managed by the plugin [`@mercuriusjs/federation`](https://github.com/mercurius-js/mercurius-federation) and the plugin [`@mercuriusjs/gateway`](https://github.com/mercurius-js/mercurius-gateway)
 

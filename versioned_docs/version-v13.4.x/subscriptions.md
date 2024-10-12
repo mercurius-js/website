@@ -1,6 +1,6 @@
 # Subscriptions
 
-- [Subscriptions](#subscriptions)
+- [Subscriptions](subscriptions)
   - [Subscription support (simple)](#subscription-support-simple)
   - [Subscription filters](#subscription-filters)
   - [Subscription Context](#subscription-context)

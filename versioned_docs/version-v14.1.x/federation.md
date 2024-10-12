@@ -1,7 +1,7 @@
 # Federation
 
-- [mercurius](#mercurius)
-  - [Federation](#federation)
+- [mercurius](mercurius)
+  - [Federation](federation)
     - [Federation metadata support](#federation-metadata-support)
     - [Federation with \_\_resolveReference caching](#federation-with-__resolvereference-caching)
     - [Use GraphQL server as a Gateway for federated schemas](#use-graphql-server-as-a-gateway-for-federated-schemas)
